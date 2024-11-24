@@ -1,0 +1,62 @@
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con transparencia */
+    color: #fff; /* Texto blanco */
+    padding: 20px 0;
+    text-align: center; /* Centrar todo el contenido */
+    border-top: 2px solid rgba(255, 255, 255, 0.2); /* Línea decorativa superior */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar las secciones */
+    gap: 40px; /* Aumentar el espacio entre las secciones */
+    margin-bottom: 20px; /* Espacio antes del footer-bottom */
+}
+
+.footer-section {
+    max-width: 300px;
+    text-align: left; /* Centrar texto de cada sección */
+    margin: 10px; /* Agregar espacio adicional alrededor de cada sección */
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #00bcd4; /* Color destacado para los títulos */
+    text-align: center;
+}
+
+.footer-section p, .footer-section a {
+    font-size: 14px;
+    color: #ddd; /* Color de texto más claro */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer-section a:hover {
+    color: #00bcd4; /* Color en hover */
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+.map-container iframe {
+    border: 0;
+    border-radius: 10px; /* Bordes redondeados para el mapa */
+}
+
+.footer-bottom {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #bbb; /* Texto más tenue */
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+}

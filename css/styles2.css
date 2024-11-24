@@ -1,0 +1,153 @@
+/* Estilos generales */
+body {
+    background: url("Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #01BBF3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #4682b4;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Sección de valores */
+.valores-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.valor {
+    width: 30%;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.valor img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.valor h3 {
+    margin: 10px 0;
+    color: #01BBF3;
+}
+
+/* Galería */
+.galeria-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.galeria-container img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón interactivo */
+.popup-btn {
+    padding: 10px 20px;
+    background-color: #004274;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup-btn:hover {
+    background-color: #003359;
+}
+
+h2{
+    text-align: center;  
+}
+
+.user-info {
+    position: absolute; /* Posiciona el contenedor relativo a su primer contenedor posicionado (el header) */
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la parte derecha */
+    display: flex;
+    align-items: center;
+}
+
+/* Imagen del usuario */
+.user-image {
+    width: 30px; /* Tamaño pequeño para la imagen */
+    height: 30px;
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    margin-right: 10px; /* Espacio entre la imagen y el nombre */
+}
+
+@media (max-width: 768px) {
+    .valores-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .valor {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .galeria-container img {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}

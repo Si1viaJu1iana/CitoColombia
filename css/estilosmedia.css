@@ -1,0 +1,135 @@
+/* Fondo animado */
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #89c9e8, #4682b4, #b0d0e6, #5a9bd6);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  z-index: -1;
+}
+
+/* Animación del gradiente */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Contenedor principal */
+.outer-container {
+  width: 70%;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+  border: 2px solid #4682b4; /* Azul opaco */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Título */
+h1 {
+  color: #4682b4; /* Azul opaco */
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Campos y etiquetas */
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #ffffff; /* Blanco */
+}
+
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Botones */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"] {
+  background-color: #4682b4; /* Azul opaco */
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #5a9bd6; /* Azul más claro */
+}
+
+button[type="reset"] {
+  background-color: #b22222; /* Rojo oscuro */
+  color: white;
+}
+
+button[type="reset"]:hover {
+  background-color: #d32f2f; /* Rojo más claro */
+}
+
+@media (max-width: 768px) {
+    .outer-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
+
+
+
+
+

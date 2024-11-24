@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilosmedia.css">
+    <title>Document</title>
+</head>
+<body>
+    
+  <div class="outer-container">
+    <form>
+      <div>
+        <h1>DATOS DE INGRESO</h1>
+      </div>
+
+      <section>
+        <div>
+          <label for="name">USERNAME</label>
+          <input type="text" id="name" name="user_name" placeholder="Nombre@citocolombia.com" required>
+        </div>
+
+        
+        <div>
+          <label for="pwd">PASSWORD</label>
+          <input type="password" id="pwd" name="pwd" required>
+        </div>
+
+        
+        <div>
+          <button type="submit" onclick="ingresar(event)">Enviar</button>
+          <button type="reset">Borrar formulario</button>
+          
+        </div>
+      </section>
+
+    </form>
+  </div>
+   <script src="js/iniciosesion.js"></script>
+</body>
+</html>
